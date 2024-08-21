@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.site-header,
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(39, 96, 178);
+    padding: 1rem 2rem;
+    color: whitesmoke;
+
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+
+            li {
+                padding: .75rem 1rem;
+            }
+        }
+    }
+}
+
+.login-page {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr auto;
+}
+
+.login-form, .user-form {
+    max-width: 25rem;
+    min-width: 25rem;
+    margin: 10rem auto 0;
+
+    fieldset {
+        border: none;
+        border-radius: 5px;
+        padding: 1rem 1rem;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 4px;
+        border: 1px solid #777;
+        border-radius: 5px;
+        padding: 0.5rem;
+    }
+
+    button {
+        padding: 0.4rem 1rem;
+        background-color: rgb(39, 96, 178);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        margin-top: .8rem;
+    }
+
+    small {
+        margin: 0 auto 0 1.5rem;
+        font-size: .75rem;
+        font-style: italic;
+        
+        a {
+            color: rgb(39, 96, 178);
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+main {
+    padding: 1rem 2em;
+}
