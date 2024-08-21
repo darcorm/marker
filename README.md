@@ -8,4 +8,4 @@ This application is a sample vanilla php application that allows a user to perfo
 - CRUD:
     - Create & Save Bookmarks
     - Edit existing bookmarks
-    - Delete bookmarks
+    - Delete bookmarks  
