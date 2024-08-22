@@ -5,7 +5,4 @@
 This application is a sample vanilla php application that allows a user to perform the following tasks:
 - Create an account
 - Login
-- CRUD:
-    - Create & Save Bookmarks
-    - Edit existing bookmarks
-    - Delete bookmarks  
+- CRUD Operations: Create & Save Bookmarks, Edit & update existing bookmarks, Delete bookmarks  
