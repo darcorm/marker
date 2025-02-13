@@ -25,10 +25,10 @@ class UserController extends Controller
     public function create()
     {
         if (Marker::$app->request->isPost()) {
-            $post  = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            $post = Marker::$app->request->post();
 
             $model = new User;
-            $model->setAttributes($post['user-form']);
+            $model->setAttributes($post);
             $model->save();
         }
 
