@@ -4,6 +4,7 @@ namespace controllers;
 
 use models\User;
 use app\Controller;
+use app\Marker;
 
 class UserController extends Controller
 {
@@ -23,7 +24,7 @@ class UserController extends Controller
 
     public function create()
     {
-        if (isset($_POST['user-form'])) {
+        if (Marker::$app->request->isPost()) {
             $post  = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
             $model = new User;

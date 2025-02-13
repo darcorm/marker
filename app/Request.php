@@ -4,10 +4,13 @@ namespace app;
 
 class Request
 {
-    public $test;
-
-    public function __construct()
+    public function isGet()
     {
-        $this->test = "hello from request";
+        return htmlspecialchars($_SERVER['REQUEST_METHOD']) === 'GET' ? true : false;
+    }
+
+    public function isPost()
+    {
+        return htmlspecialchars($_SERVER['REQUEST_METHOD']) === 'POST' ? true : false;
     }
 }

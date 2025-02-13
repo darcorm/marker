@@ -11,6 +11,3 @@ Marker::init();
 
 $app = \app\Marker::$app;
 $app->run($config);
-
-var_dump($app->name);
-die();
