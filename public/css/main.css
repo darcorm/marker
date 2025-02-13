@@ -35,7 +35,8 @@ body {
     grid-template-rows: auto 1fr 1fr auto;
 }
 
-.login-form, .user-form {
+.login-form,
+.user-form {
     max-width: 25rem;
     min-width: 25rem;
     margin: 10rem auto 0;
@@ -67,11 +68,11 @@ body {
         margin: 0 auto 0 1.5rem;
         font-size: .75rem;
         font-style: italic;
-        
+
         a {
             color: rgb(39, 96, 178);
         }
-        
+
         a:hover {
             text-decoration: underline;
             cursor: pointer;
@@ -81,4 +82,8 @@ body {
 
 main {
     padding: 1rem 2em;
+}
+
+.link {
+    cursor: pointer;
 }

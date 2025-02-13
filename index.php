@@ -1,9 +1,13 @@
 <?php
 
+use app\Marker;
+
 ini_set('display_errors', 1);
 
 require_once('autoload.php');
 $config = require_once('config/config.php');
 
-$app = app\App::getInstance();
+Marker::init();
+
+$app = \app\Marker::$app;
 $app->run($config);
