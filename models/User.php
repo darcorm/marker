@@ -2,7 +2,9 @@
 
 namespace models;
 
-class User
+use app\Model;
+
+class User extends Model
 {
     public function setAttributes(array $attributes)
     {

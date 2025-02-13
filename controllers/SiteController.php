@@ -29,6 +29,11 @@ class SiteController extends Controller
         ]);
     }
 
+    public function about()
+    {
+        return $this->renderPartial('about');
+    }
+
     public function login(array $params = [])
     {
         return $this->renderPartial('login', [

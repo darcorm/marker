@@ -26,6 +26,7 @@ class UserController extends Controller
         if (isset($_POST['user-form'])) {
             $model = new User;
             $model->setAttributes($_POST['user-form']);
+            $model->save();
         }
 
         return $this->renderPartial('create');

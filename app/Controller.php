@@ -8,10 +8,9 @@ class Controller
         protected $class = 'site',
         protected $method = 'index',
         protected $params = []
-    ) {
-    }
+    ) {}
 
-    protected function render(string $view, array $params = [])
+    protected function render(string $view, array $params = []): void
     {
         extract($params);
 
@@ -20,7 +19,7 @@ class Controller
         require("views/layouts/footer.php");
     }
 
-    protected function renderPartial(string $view, array $params = [])
+    protected function renderPartial(string $view, array $params = []): void
     {
         extract($params);
 
