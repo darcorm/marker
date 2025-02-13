@@ -10,6 +10,7 @@ class App
     private static $instance;
     private static $vars = [];
     public static $session;
+    public Request $request;
 
     public static function getInstance(): self
     {
@@ -31,6 +32,7 @@ class App
     {
         $this->init($config);
         $this->startSession();
+        $this->request = new Request();
         return new Router;
     }
 

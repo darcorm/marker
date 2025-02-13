@@ -24,8 +24,10 @@ class UserController extends Controller
     public function create()
     {
         if (isset($_POST['user-form'])) {
+            $post  = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+
             $model = new User;
-            $model->setAttributes($_POST['user-form']);
+            $model->setAttributes($post['user-form']);
             $model->save();
         }
 
