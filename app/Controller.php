@@ -10,7 +10,16 @@ class Controller
         protected $params = []
     ) {}
 
-    protected function render(string $view, array $params = []): void
+    protected function render(string $view, array $params = [])
+    {
+        if (Marker::$app->request->getHeader('HX-Request')) {
+            return $this->renderPartial($view, $params);
+        }
+
+        return $this->renderFull($view, $params);
+    }
+
+    protected function renderFull(string $view, array $params = []): void
     {
         extract($params);
 

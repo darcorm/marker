@@ -24,19 +24,19 @@ class SiteController extends Controller
 
     public function home()
     {
-        return $this->renderPartial('index', [
+        return $this->render('index', [
             'model' => 'Site index render test'
         ]);
     }
 
     public function about()
     {
-        return $this->renderPartial('about');
+        return $this->render('about');
     }
 
     public function login(array $params = [])
     {
-        return $this->renderPartial('login', [
+        return $this->render('login', [
             'params' => $params
         ]);
     }

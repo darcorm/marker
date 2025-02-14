@@ -32,6 +32,6 @@ class UserController extends Controller
             $model->save();
         }
 
-        return $this->renderPartial('create');
+        return $this->render('create');
     }
 }
