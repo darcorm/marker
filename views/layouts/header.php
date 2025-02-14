@@ -20,7 +20,7 @@ $appName = App::getInstance()->get('name');
 
 <body>
     <header class="site-header">
-        <h1 hx-trigger="click" hx-get="site/home" hx-target="#content" class="link"><?= $appName ?></h1>
+        <h1 hx-trigger="click" hx-get="site/index" hx-target="#content" class="link"><?= $appName ?></h1>
         <?php require_once('topnav.php') ?>
     </header>
 

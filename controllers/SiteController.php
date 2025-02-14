@@ -22,13 +22,6 @@ class SiteController extends Controller
         ]);
     }
 
-    public function home()
-    {
-        return $this->render('index', [
-            'model' => 'Site index render test'
-        ]);
-    }
-
     public function about()
     {
         return $this->render('about');
