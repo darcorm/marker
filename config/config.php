@@ -1,7 +1,5 @@
 <?php
 
-use app\Request;
-
 return [
     'name' => 'Marker',
     'db' => [
@@ -9,5 +7,4 @@ return [
         'user' => 'root',
         'pass' => 'pass'
     ],
-    'request' => new Request
 ];

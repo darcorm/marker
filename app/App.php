@@ -36,7 +36,7 @@ class App
         return new Router;
     }
 
-    public function get(string $key): string | null
+    public function get(string $key): string | array | null
     {
         return array_key_exists($key, self::$vars) ? self::$vars[$key] : null;
     }
