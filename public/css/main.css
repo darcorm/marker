@@ -10,6 +10,13 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+.site-header {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
 .site-header,
 .site-footer {
     display: flex;
@@ -86,4 +93,19 @@ main {
 
 .link {
     cursor: pointer;
+}
+
+.page-content {
+    padding: 5px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: all ease-in-out 0.25s;
+}
+
+.square:hover {
+    border-radius: 50%;
 }
